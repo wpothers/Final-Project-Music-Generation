@@ -62,11 +62,11 @@ def findVelocity(velocity):
         return noteOff
     if (velocity > 0 and veolicty <= 32):
         return piano
-    elif (velocity > 32 and velocity <= 64):
+    if (velocity > 32 and velocity <= 64):
         return mezzoforte
-    elif (velocity > 64 and velocity <= 96):
+    if (velocity > 64 and velocity <= 96):
         return forte
-    elif (velocity > 96):
+    if (velocity > 96):
         return fortissimo
 
 maxLength = 0
